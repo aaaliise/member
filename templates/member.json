@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Энди Уир",
+    "picture": "https://raskraskino.com/drawing/characters/coloring-ufo-103142.jpg",
+    "prof": ["специалист по радиационной защите", "астрогеолог"]
+  },
+  {
+    "name": "Scott Ridley",
+    "picture": "https://flomaster.club/uploads/posts/2021-11/1636846458_72-flomaster-club-p-raskraska-prisheltsi-dlya-detei-krasivie-79.jpg",
+    "prof": ["инженер-исследователь", "пилот"]
+  },
+  {
+    "name": "Weir Andy",
+    "picture": "https://detskie-raskraski.ru/sites/default/files/detskie-raskraski-inoplanetyane21.jpg",
+    "prof": ["астрогеолог", "метеоролог", "оператор марсохода"]
+  }
+]

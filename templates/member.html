@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4>И на Марсе будут яблони цвести!</h4>
+
+{% set x = f[n] %}
+{% set prof = (x["prof"]|sort)|join(', ') %}
+
+<h2>{{ x["name"] }}</h2><br/>
+<img src={{ x["picture"] }} height=250 width=200/><br/>
+<p>{{ prof }}</p>
+{% endblock %}

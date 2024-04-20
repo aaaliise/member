@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Миссия Колонизация Марса</h1>
+<h4>И на Марсе будут яблони цвести!</h4>
+<h2>Размещение по каютам</h2>
+<ul>
+    {% for user in name %}
+    {% if loop.first %}
+    {{ user }} - Каюта №{{ loop.index }} - капитан корабля<br/>
+    {% else %}
+    {{ user }} - Каюта №{{ loop.index }} <br/>
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4>И на Марсе будут яблони цвести!</h4>
+{% if pl == 'female' and age >= 21 %}
+{% set color = "#ff0000" %}
+{% set picture = '/static/25.png' %}
+{% elif pl == 'female' and age < 21 %}
+{% set color = "#ff9999" %}
+{% set picture = '/static/14.png' %}
+{% elif pl == 'male' and age >= 21 %}
+{% set color = "#5d76cb" %}
+{% set picture = '/static/25.png' %}
+{% elif pl == 'male' and age < 21 %}
+{% set color = "#75c1ff" %}
+{% set picture = '/static/14.png' %}
+{% endif %}
+<h2>Оформление каюты</h2>
+<table>
+<tr><th>Цвет стен</th><th>Эмблема</th></tr>
+<tr><td style="background-color: {{ color }}"></td><td><img src={{ picture }}/></td></tr>
+</table>
+{% endblock %}
